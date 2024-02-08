@@ -1,0 +1,131 @@
+.wd-navigation {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  width: 150px;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.wd-navigation li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wd-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+
+.wd-navigation li.wd-active a {
+  color: black;
+}
+
+.wd-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-chevron {
+  width: fit-content;
+}
+
+.wd-chevron a {
+  color: red;
+}
+
+.wd-indented {
+  margin-left: 5px;
+}
+
+.wd-status-btn button {
+  width: 225px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.wd-todo hr {
+  width: 225px;
+}
+
+.wd-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  /* Ensure it's a circle */
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.wd-status-assignments {
+  text-align: left;
+}
+
+.wd-status-assignments h6 {
+  color: red;
+  font-size: 12px;
+}
+
+.wd-status-assignments h6 i {
+  color: black;
+  margin-right: 19px;
+}
+
+.wd-status-assignments p {
+  color: gray;
+  font-size: 12px;
+  margin-left: 34px;
+}
+
+.wd-black-top-bar {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.wd-black-top-bar p {
+  line-height: 1.5;
+}
+
+.wd-black-top-bar i {
+  margin-top: 40px;
+
+}
+
+a[aria-expanded=true] .fa-chevron-down {
+  display: none;
+}
+
+a[aria-expanded=false] .fa-close {
+  display: none;
+}
+
+a {
+  color: black;
+}
+
+.b1 {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-size: 22px;
+  margin-right: 20px;
+}
+

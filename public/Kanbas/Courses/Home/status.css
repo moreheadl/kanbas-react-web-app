@@ -1,0 +1,124 @@
+.wd-status-btn button {
+    width: 225px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.wd-todo hr {
+    width: 225px;
+}
+
+.wd-circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%; /* Ensure it's a circle */
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    margin-left: 18px;
+  }
+
+  .wd-status-assignments {
+    text-align: left;
+  }
+
+  .wd-status-assignments h6 {
+    color: red;
+    font-size: 12px;
+  }
+
+  .wd-status-assignments h6 i {
+    color: black;
+    margin-right: 19px;
+  }
+
+  .wd-status-assignments p {
+    color: gray;
+    font-size: 12px;
+    margin-left: 34px;
+  }
+
+  .wd-black-top-bar {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .wd-black-top-bar p {
+    line-height: 1.5;
+  }
+
+.wd-black-top-bar i {
+    margin-top: 40px;
+    
+  }
+
+a[aria-expanded=true] .fa-chevron-down {
+    display: none;
+ }
+
+a[aria-expanded=false] .fa-close {
+    display: none;
+ }
+
+ a {
+  color: black;
+ }
+  
+.b1 {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.wd-collapse-list {
+  width: 100vw;
+  z-index: 1000;
+  background-color: white;
+  height: 100%;
+  padding-bottom: 100vh;
+}
+
+.wd-collapse-list li {
+  height: 20px;
+  text-align: left;
+  z-index: 1000;
+  background-color: white;
+  
+}
+
+.wd-collapse-list li a {
+  text-align: left;
+  color: red;
+  z-index: 1000;
+  background-color: white;
+}
+
+.wd-full-screen {
+  display: block;
+}
+
+.wd-small-screen {
+  display: none;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .wd-full-screen {
+    display: none;
+  }
+
+  .wd-small-screen {
+    display: block;
+  }
+}
