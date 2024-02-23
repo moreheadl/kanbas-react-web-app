@@ -25,6 +25,19 @@
     margin-top: -10px;
   }
 
-  .wd-status-todo-details {
+  .wd-status-details {
     margin-top: -10px;
+  }
+
+  .wd-status-coming-calendar {
+    color: red;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .wd-status-cu-left-red {
+    color: red;
+    margin-left: 32px;
   }
