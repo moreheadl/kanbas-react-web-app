@@ -1,7 +1,35 @@
-.wd-kanbas-courses-header {
-    font-size: 25px;
-    color: crimson;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 5px;
+
+
+.wd-breadcrumb-full {
+    color: red;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+
 }
+
+.breadcrumb-item {
+    color: red;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.wd-burger-b1 {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: red;
+    font-size: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 14px;
+  }
+
+  .testing {
+    margin-left: auto;
+    padding-top: 20px;
+  }

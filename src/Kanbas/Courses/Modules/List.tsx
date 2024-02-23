@@ -1,15 +1,35 @@
 import React, { useState } from "react";
 import "./index.css";
 import { modules } from "../../Database";
-import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
+import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaPlus } from "react-icons/fa";
 import { useParams } from "react-router";
+
+
 function ModuleList() {
   const { courseId } = useParams();
   const modulesList = modules.filter((module) => module.course === courseId);
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
     <>
-      {/* <!-- Add buttons here --> */}
+      {/* <div className="justify-content-end" > */}
+
+      <div className="d-flex justify-content-end">
+          <button type="button">Collapse All</button>
+          <button type="button">View Progress</button>
+          <select id="select-publish-all">
+              <option>
+                <FaCheckCircle /> Publish All
+              </option>
+          </select>
+          <button className="btn btn-danger" type="button">
+              <FaPlus/>
+              Module</button>
+          <button type="button">
+            <FaEllipsisV/>
+          </button>
+      </div>
+        {/* </div> */}
+      <div className="row">
       <ul className="list-group wd-modules">
         {modulesList.map((module, index) => (
           <li key={index}
@@ -41,6 +61,8 @@ function ModuleList() {
           </li>
         ))}
       </ul>
+      </div>
+      {/* </div> */}
     </>
   );
 }
