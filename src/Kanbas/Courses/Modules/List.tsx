@@ -11,6 +11,7 @@ function ModuleList() {
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
     <>
+
       <div className="d-flex justify-content-end">
           <button type="button">Collapse All</button>
           <button type="button">View Progress</button>
@@ -26,6 +27,7 @@ function ModuleList() {
             <FaEllipsisV/>
           </button>
       </div>
+        {/* </div> */}
       <div className="row">
       <ul className="list-group wd-modules">
         {modulesList.map((module, index) => (

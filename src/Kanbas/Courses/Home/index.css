@@ -1,4 +1,30 @@
 .wd-status-center {
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
+
+.wd-status-publish-btns button {
+    padding-left: 5px;
+}
+
+.wd-status-assignments {
+    text-align: left;
+  }
+
+  .wd-status-assignments h6 {
+    color: red;
+    font-size: 16px;
+  }
+
+
+  .wd-status-todo-close {
+    color: gray;
+    font-size: 50px;
+    padding-right: 14px;
+    margin-top: -10px;
+  }
+
+  .wd-status-todo-details {
+    margin-top: -10px;
+  }

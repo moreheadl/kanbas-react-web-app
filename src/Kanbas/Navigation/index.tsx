@@ -14,8 +14,6 @@ function KanbasNavigation() {
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2 wd-kanbas-navigation-i-color" />  },
     { label: "Courses",   icon: <FaBook className="fs-2 wd-kanbas-navigation-i-color" />           },
     { label: "Calendar",  icon: <FaRegCalendarAlt className="fs-2 wd-kanbas-navigation-i-color" /> },
-  ];
-  const not_linked = [
     { label: "Inbox",   icon: <FaInbox className="fs-2 wd-kanbas-navigation-i-color"/>},
     { label: "History", icon: <FaRegClock className="fs-2 wd-kanbas-navigation-i-color" />  },
     { label: "Studio",   icon: <LuMonitorPlay className="fs-2 wd-kanbas-navigation-i-color" />           },
@@ -31,13 +29,8 @@ function KanbasNavigation() {
         <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
           <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>
         </li>
-      ))}
-      {not_linked.map((navItem, val) => (
-        <li key={val} className={pathname.includes(navItem.label) ? "wd-active" : ""}>
-            <Link to={`#`}> {navItem.icon} {navItem.label} </Link>
-        </li>
       ))};
-      
+
     </ul>
   );
 }

@@ -10,8 +10,6 @@ import Breadcrumb from "./Breadcrumb";
 
 
 function Courses() {
-  const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
   return (
     <div className="wd-full-screen">
       <div className="d-flex flex-column w-100">

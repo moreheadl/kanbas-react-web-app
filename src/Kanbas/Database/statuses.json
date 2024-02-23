@@ -1,0 +1,62 @@
+[
+    {
+      "_id": "RS101",
+      "todos": [
+        {
+          "_id": "TD101",
+          "name": "Grade A1 - ENV + HTML",
+          "points": "100",
+          "date": "Jan 20",
+          "time": "11:59pm"
+        },
+        {
+            "_id": "TD102",
+            "name": "Grade Quiz 1",
+            "points": "35",
+            "date": "Jan 22",
+            "time": "9:59pm"
+          }
+      ]
+    },
+
+    {
+        "_id": "RS102",
+        "todos": [
+          {
+              "_id": "TD201",
+              "name": "Grade HW 4",
+              "points": "85",
+              "date": "Feb 23",
+              "time": "12:59pm"
+            }
+        ]
+      },
+
+      {
+        "_id": "RS103",
+        "todos": [
+          {
+            "_id": "TD301",
+            "name": "Grade Exam 1",
+            "points": "100",
+            "date": "Jan 31",
+            "time": "11:59pm"
+          },
+          {
+              "_id": "TD302",
+              "name": "Grade Quiz 3",
+              "points": "17",
+              "date": "Feb 24",
+              "time": "11:59pm"
+            },
+            {
+                "_id": "TD303",
+                "name": "Grade Project 1",
+                "points": "75",
+                "date": "Mar 03",
+                "time": "11:59pm"
+              }
+        ]
+      }
+
+]
