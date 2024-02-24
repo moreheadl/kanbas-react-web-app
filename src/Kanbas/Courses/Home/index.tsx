@@ -1,4 +1,5 @@
 import ModuleList from "../Modules/List";
+import BlackBar from "./BlackBar";
 import Status from "./Status";
 
 
