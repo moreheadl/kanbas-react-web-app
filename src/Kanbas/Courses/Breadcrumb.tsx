@@ -1,13 +1,13 @@
 import { FaGlasses } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
-import { useLocation, useParams } from "react-router";
+import { useLoaderData, useLocation, useParams } from "react-router";
+import { courses } from "../Database";
 
 function Breadcrumb() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
-    const currPage = pathname.split('/').pop()
-
-
+    const currPage = pathname.split('/').pop();
+    const course = courses.find((course) => course._id === courseId);
 
     return (
         <>
@@ -20,7 +20,7 @@ function Breadcrumb() {
                             </button>
                         </li>
                         <li className="breadcrumb-item">
-                            {courseId}
+                            {course?.number} 
                         </li>
                         <li className="breadcrumb-item active" aria-current="page">{currPage}</li>
                         <li className="testing">
