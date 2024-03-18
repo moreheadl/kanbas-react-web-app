@@ -1,13 +1,13 @@
 import { FaGlasses } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { useLoaderData, useLocation, useParams } from "react-router";
-import { courses } from "../Database";
+import db from "../Database";
 
 function Breadcrumb() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const currPage = pathname.split('/').pop();
-    const course = courses.find((course) => course._id === courseId);
+    const course = db.courses.find((course) => course._id === courseId);
 
     return (
         <>

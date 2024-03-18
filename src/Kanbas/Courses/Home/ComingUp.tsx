@@ -1,4 +1,4 @@
-import { statuses, courses } from "../../Database"
+import db from "../../Database"
 import { useParams } from "react-router";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -6,9 +6,9 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 
 function ComingUp() {
     const { courseId } = useParams();
-    const statusesList = statuses.filter((status) => status._id === courseId);
+    const statusesList = db.statuses.filter((status) => status._id === courseId);
     const [selectedStatus] = useState(statusesList[0]);
-    const coursesList = courses.filter((course) => course._id === courseId);
+    const coursesList = db.courses.filter((course) => course._id === courseId);
     const [selectedCourse] = useState(coursesList[0]);
 
 

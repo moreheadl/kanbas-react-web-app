@@ -1,11 +1,11 @@
-import { statuses } from "../../Database"
+import db from "../../Database"
 import { useParams } from "react-router";
 import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 
 function TodoList() {
     const { courseId } = useParams();
-    const statusesList = statuses.filter((status) => status._id === courseId);
+    const statusesList = db.statuses.filter((status) => status._id === courseId);
     const [selectedStatus] = useState(statusesList[0]);
 
     return (

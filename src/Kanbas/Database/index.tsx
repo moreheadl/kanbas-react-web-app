@@ -4,4 +4,4 @@ import assignments from "./assignments.json";
 import statuses from "./statuses.json";
 
 
-export {  courses, modules, assignments, statuses  };
+export default {  courses, modules, assignments, statuses  };

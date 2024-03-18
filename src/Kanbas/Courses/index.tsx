@@ -1,5 +1,3 @@
-import { courses } from "../../Kanbas/Database";
-
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import Assignments from "./Assignments";
 import CourseNavigation from "./Navigation";
@@ -9,7 +7,9 @@ import Home from "./Home";
 import Breadcrumb from "./Breadcrumb";
 
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
+  const { courseId } = useParams();
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div className="wd-full-screen">
       <div className="d-flex flex-column w-100">
