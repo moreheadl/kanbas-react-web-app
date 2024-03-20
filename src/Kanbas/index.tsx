@@ -11,7 +11,7 @@ function Kanbas() {
   const [courses, setCourses] = useState<any[]>(db.courses);
   const [course, setCourse] = useState({
     _id: "1234", name: "New Course", number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15",
+    startDate: "2023-09-10", endDate: "2023-12-15", image: "northeastern_logo.jpg" 
   });
   const addNewCourse = () => {
     setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
@@ -34,7 +34,7 @@ function Kanbas() {
     <Provider store={store}>
     <div className="d-flex">
       <KanbasNavigation />
-      <div>
+      <div className="d-fill justify-content-end w-100">
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
           <Route path="Account" element={<h1>Account</h1>} />
