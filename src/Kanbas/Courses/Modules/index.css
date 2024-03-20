@@ -39,4 +39,16 @@
     padding-right: 5px;
 }
 
+.wd-change-buttons {
+  margin-right: 2px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.wd-limited-padding {
+  padding: 1px;
+  border-radius: 0px;
+  margin-right: 2px;
+
+}
 

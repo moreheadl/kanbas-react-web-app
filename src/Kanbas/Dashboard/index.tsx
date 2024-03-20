@@ -12,6 +12,7 @@ function Dashboard(
   
   
   return (
+    <div className="d-flex justify-content-end">
     <div className="p-4">
       <h1>Dashboard</h1>              <hr />
       <h2>Published Courses ({courses.length})</h2> <hr />
@@ -62,6 +63,7 @@ function Dashboard(
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
